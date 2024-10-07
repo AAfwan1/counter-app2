@@ -36,20 +36,24 @@
 <body>
   <div id="demo">
     <h1>counter-app</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
+    <!-- Default counter-app component -->
     <h2>Default</h2>
     <counter-app></counter-app>
+    <!-- Counter-app component with slot usage -->
     <h2>Slot usage</h2>
-    <counter-app data-accent="2" data-primary="17"><div>Sample slot content</div></counter-app>
+    <counter-app data-accent="2" data-primary="17">
+      <div>Slot usage button content</div>
+    </counter-app>
+    <!-- Counter-app component with properties -->
     <h2>Property usage</h2>
-    <counter-app id="example" title="Sample property title"></counter-app>
+    <counter-app counter="16" min="10" max="25"></counter-app>
   </div>
   <script type="module" src="./src/counter-app.js"></script>
 
-  <!-- Take HAX, the Web and you further down the rabbit hole -->
+  <!-- Additional development information -->
   <style>
     #follow-the-white-rabbit {
-      margin: var(--ddd-spacing-4) auto 64px  16px;
+      margin: var(--ddd-spacing-4) auto 64px 16px;
       background-color: var(--ddd-accent-4);
     }
     #follow-the-white-rabbit[open] summary {
@@ -84,9 +88,7 @@
     <summary>How to Develop</summary>
     <div class="content">
       <p>
-      
         <strong>Checkout project on github:</strong> <a href="https://github.com/DylanConnor28/counter-app" target="_blank" rel="nofollow">DylanConnor28/counter-app</a>
-        
       </p>
       <p>
         You can edit the current page by modifying <code>index.html</code><br />
