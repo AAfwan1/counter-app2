@@ -30,11 +30,6 @@ export class CounterApp extends LitElement {
         text-align: center;
         font-family: Arial, sans-serif;
         margin: 16px auto;
-        padding: 16px;
-        border: 2px solid #ccc;
-        border-radius: 8px;
-        max-width: 300px;
-        background-color: #f9f9f9;
       }
 
       .counter-value {
@@ -99,9 +94,9 @@ export class CounterApp extends LitElement {
         ? 'min'
         : this.counter === this.max
         ? 'max'
-        : this.counter >= 7
+        : this.counter >= 21
         ? 'high'
-        : this.counter >= 4
+        : this.counter >= 18
         ? 'mid'
         : '';
 

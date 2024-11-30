@@ -1,39 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Counter App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Demo of my-card and counter-app components">
+  <base href="/">
+
   <style>
+    :root,
+    html,
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #e9ecef;
+      font-family: sans-serif;
+      background-color: #ededed;
     }
+
     h1 {
       text-align: center;
-      color: #333;
+      margin: 32px 0;
+    }
+
+    section {
+      margin: 32px auto;
+      max-width: 600px;
+      text-align: center;
     }
   </style>
+  <title>My Card and Counter App</title>
 </head>
 
 <body>
-  <div>
-    <h1>Counter App Demo</h1>
-    <!-- Default counter-app -->
+  <h1>My Counter Integration</h1>
+
+  <section>
+    <h2>Counter App Demo</h2>
+    <!-- Default counter -->
     <counter-app></counter-app>
 
-    <!-- Counter-app with customized properties -->
-    <counter-app counter="5" min="2" max="10"></counter-app>
-  </div>
+    <!-- Customized counter -->
+    <counter-app counter="16" min="10" max="25"></counter-app>
+  </section>
 
-  <script type="module" src="./counter-app.js"></script>
+  <script type="module" src="./src/counter-app.js"></script>
 </body>
 
 </html>
